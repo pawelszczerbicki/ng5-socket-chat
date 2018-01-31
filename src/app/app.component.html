@@ -1,0 +1,11 @@
+<div>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf="err">
+    <button type="button" class="close"><span aria-hidden="true" (click)="dismissError()">×</span>
+    </button>
+    <i class="fa fa-exclamation-circle"></i> {{err}}
+  </div>
+  <app-token-generator (onNewNick)="changeNickname($event)"></app-token-generator>
+  <app-user-picker (changeUser)="changeUser($event)"></app-user-picker>
+  <app-display [messages]="msg"></app-display>
+  <app-send class="bottom" (onMessage)="sendMsg($event)"></app-send>
+</div>

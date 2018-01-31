@@ -1,0 +1,10 @@
+.right{
+  position: absolute;
+  right: 0;
+}
+
+input {
+  border: none;
+  width: 90%;
+  height: 100%;
+}
